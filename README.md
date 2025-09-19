@@ -26,6 +26,91 @@ This repo for all git hub commads using for all types This repository serves as 
 
 ---
 
+## 🔑 Key Workflows
+
+ 🛩️Original Repository (Owner Maintainer)
+
+**Clone your repository:**
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
+
+**Make changes and push:**
+
+```bash
+git checkout -b feature/my-update
+# make edits
+
+git add .
+git commit -m "Added new feature"
+git push origin feature/my-update
+```
+
+**Merge to main branch:**
+
+```bash
+git checkout main
+git pull origin main
+git merge feature/my-update
+git push origin main
+```
+
+🚀Forked Repository (Contributor)
+
+**Fork:** Click *Fork* on GitHub to create a personal copy.
+
+**Clone fork locally:**
+
+```bash
+git clone https://github.com/your-username/forked-repo.git
+cd forked-repo
+```
+
+**Add the original repository as upstream:**
+
+```bash
+git remote add upstream https://github.com/original-author/repo.git
+git remote -v
+```
+
+**Stay updated with upstream changes:**
+
+```bash
+git fetch upstream
+git checkout main
+git merge upstream/main
+```
+
+**Make changes on a branch:**
+
+```bash
+git checkout -b fix/typo
+# edit files
+
+git add .
+git commit -m "Fix: corrected typo"
+git push origin fix/typo
+```
+
+**Open Pull Request:** Go to GitHub → Compare & Pull Request → Submit PR to `original/main`.
+
+---
+
+## 📂 Essential Categories
+
+* **Basics**: `git init`, `git clone`, `git config`
+* **Staging & Committing**: `git add`, `git commit`, `git status`
+* **Branching**: `git checkout -b`, `git branch -d`
+* **Remote Work**: `git remote add`, `git push`, `git pull`, `git fetch`
+* **Merging & Rebasing**: `git merge`, `git rebase`
+* **Conflicts**: resolve markers `<<<<<<< >>>>>>>`, then `git add` + `git commit`
+* **Undo Mistakes**: `git reset`, `git revert`, `git checkout -- file`
+* **Inspecting History**: `git log`, `git diff`, `git reflog`
+* **Errors & Fixes**: push rejected, detached HEAD, auth issues
+---
+
 ## 1. Basics & Configuration
 
 * `git init` — Create a new repository in the current folder.
